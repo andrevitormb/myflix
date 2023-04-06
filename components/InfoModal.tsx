@@ -7,7 +7,7 @@ import useInfoModal from '@/hooks/useInfoModal'
 import useMovie from '@/hooks/useMovie'
 
 interface InfoModalProps {
-    visible: boolean;
+    visible?: boolean;
     onClose: any
 }
 
