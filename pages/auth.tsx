@@ -74,7 +74,7 @@ const Auth = () => {
                                 value={email}/>
                             <Input
                                 label='Password'
-                                onChange={(e : React.ChangeEvent<HTMLInputElement>)=> setPassword(e.target.value)}
+                                onChange={(e: React.ChangeEvent<HTMLInputElement>)=> setPassword(e.target.value)}
                                 id='password'
                                 type='password'
                                 value={password}/>

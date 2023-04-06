@@ -9,6 +9,10 @@ const Watch = () => {
 
     const {data} = useMovie(movieId as string)
 
+    const handleBackClick = () => {
+        router.push('/')
+    }
+
     return (
         <div className='h-screen w-screen bg-black'>
             <nav className='
@@ -23,7 +27,7 @@ const Watch = () => {
             bg-black
             bg-opacity-70'
             >
-                <AiOutlineArrowLeft className='text-white' size={40}/>
+                <AiOutlineArrowLeft onClick={handleBackClick} className='text-white cursor-pointer hover:scale-110 transition' size={40}/>
                 <p className='text-white text-1xl md:text-3xl font-bold'>
                     <span>
                         Watching:
